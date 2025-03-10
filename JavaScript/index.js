@@ -40,14 +40,90 @@
 // 1. Premitive Data Type
 
 // Number
+
+// let a = 10;   
+// let b = 20; 
+
+// console.log(a + " and " + b);
+
+// console.log(a);
+// console.log(typeof a);
+
+
+
+
 // null
+
+// let b = null;
+
+// console.log(b);
+// console.log(typeof b);
+
+
 // String
+
+
+// let c = "hello";
+// let c = 'hello';
+// let c = `hello`;             // Backtick or Template Literals
+// let c = `Hello, I'm a Boy`;  
+// let c = "Hello, I'm a Boy";  
+
+// console.log(c);
+
+
 // Symbol
+
+// let d = Symbol("hello")
+
+// console.log(d);
+
+
+
 // BigInt
+
+// let e  = 5454554554554n;
+// console.log(e);
+
 // Boolean
+
+
+// let f = true;
+// console.log(f);
+
 // undefined
+
+
+// let g;   // Declared but Value Not Assigned
+
+// console.log(g);
+
+
+// console.log(Not_Defined);
+
 
 // 2. Non-Premitive Data Type
 
 // Array
+
+
+// let arr = [10, "hello", true];
+
+// console.log(arr);
+// console.log(arr.length);
+
+
+
+
 // Object 
+
+
+// let myobj = {
+//     name: "Manav",
+//     age: 21,
+//     isLoggedIn : true
+// }
+
+// console.log(myobj);
+// console.log(myobj.name);
+// console.log(myobj.age);
