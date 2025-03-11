@@ -1,129 +1,79 @@
-// Variables In JS 
+// Method of Data Types 
 
-// var   => It was used before ES6
-// let   => Introduce In ES6
-// const => constant 
-
-// 1. Var 
+//  NNSSBBU
 
 
-// keyword Name = Value Assign (Data Type)
+// 1. Number method 
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+
+    // let a = 10.6555415454;
+
+    // console.log(a);
+    // console.log(`typeof a => ` + typeof a);
+    // console.log("Number.isFinite(a) => " + Number.isFinite(a));
+    // console.log("Number.isInteger(a) => " + Number.isInteger(a));
+    // console.log("parseInt(a) => " + parseInt(a));
+    // console.log("parseInt(a) => " + parseFloat(a));
+    // console.log(a.toFixed(2));
+    // console.log(a.toString());
+    
+    
+
+    
 
 
-// var a;
-// a= 10;
+// 2. Math method 
 
-// var a = 10;  // Initialization and Declaration 
-// var a = 20;   // Re-Declaration is Possible 
-// a = 30;       // Re-Assignment is Possible
-// console.log(a);
+// let a = 8.4;
+// let b = 81;
 
-
-// 2. let
-// let name = "Manav";  // Initialization and Declaration 
-// // let name = "Manav Patel";   // Re-Declaration is Impossible 
-// name = "Manav Parikh";       // Re-Assignment is Possible
-// console.log(name);
-
-
-// 3. const 
-
-// const fav_Cricketer = "Rohit Sharma";
-// // const fav_Cricketer = "Ishan Kishan";    // Re-Declaration is Impossible 
-// // fav_Cricketer = "Virat Kohli";            // Re-Assignment is Impossible
-// console.log(fav_Cricketer);
-
-
-
-// Data Types 
-
-// 1. Premitive Data Type
-
-// Number
-
-// let a = 10;   
-// let b = 20; 
-
-// console.log(a + " and " + b);
-
-// console.log(a);
-// console.log(typeof a);
+// console.log(Math.PI);
+// console.log(Math.PI.toFixed(3));
+// console.log(Math.ceil(a));  // Returns the smallest integer greater than or equal to the input.
+// console.log(Math.floor(a)); // Returns the largest integer less than or equal to the input.
+// console.log(Math.round(a));
+// console.log(Math.random());     // 0-1
+// console.log(parseInt(Math.random()*7));     // 1-6
+// console.log(Math.round((Math.random()*7)));     // 1-6
+// console.log(Math.max(10,8,5,11));
+// console.log(Math.min(10,8,5,11));
+// console.log(Math.sqrt(b));
 
 
 
 
-// null
-
-// let b = null;
-
-// console.log(b);
-// console.log(typeof b);
+    
 
 
-// String
+// 3. String method 
+
+    let a = "    Namaste Bharat    ";
+
+    let b = "Maanav patel";
+
+    console.log(a);
+    // console.log(typeof a);
+    // console.log(a.toUpperCase());
+    // console.log(a.toLowerCase());
+    // console.log(a.length);
+    // console.log(a.indexOf("b"));
+    // console.log(a.indexOf("B"));
+    // console.log(a.indexOf("a"));
+    // console.log(a.lastIndexOf("a"));
+    // console.log(a.concat(" Mata"));
+    // console.log(b);
+    // console.log(b.replace("patel", "Parikh"));
+    // console.log(a.trim());
+    
+    
+
+    
+    
+    
+    
+    
 
 
-// let c = "hello";
-// let c = 'hello';
-// let c = `hello`;             // Backtick or Template Literals
-// let c = `Hello, I'm a Boy`;  
-// let c = "Hello, I'm a Boy";  
-
-// console.log(c);
-
-
-// Symbol
-
-// let d = Symbol("hello")
-
-// console.log(d);
-
-
-
-// BigInt
-
-// let e  = 5454554554554n;
-// console.log(e);
-
-// Boolean
-
-
-// let f = true;
-// console.log(f);
-
-// undefined
-
-
-// let g;   // Declared but Value Not Assigned
-
-// console.log(g);
-
-
-// console.log(Not_Defined);
-
-
-// 2. Non-Premitive Data Type
-
-// Array
-
-
-// let arr = [10, "hello", true];
-
-// console.log(arr);
-// console.log(arr.length);
-
-
-
-
-// Object 
-
-
-// let myobj = {
-//     name: "Manav",
-//     age: 21,
-//     isLoggedIn : true
-// }
-
-// console.log(myobj);
-// console.log(myobj.name);
-// console.log(myobj.age);
+// 4. Array method  
+// 5. Object method 
