@@ -109,6 +109,9 @@
     console.log(myarr.sort());
     
     
+
+    // Map, Filter, Reduce,=> Higher Order Function
+    // For Each   => Loop
     
 
 // 5. Object method 
