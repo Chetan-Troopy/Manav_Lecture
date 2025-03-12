@@ -48,11 +48,11 @@
 
 // 3. String method 
 
-    let a = "    Namaste Bharat    ";
+    // let a = "    Namaste Bharat    ";
 
-    let b = "Maanav patel";
+    // let b = "Maanav patel";
 
-    console.log(a);
+    // console.log(a);
     // console.log(typeof a);
     // console.log(a.toUpperCase());
     // console.log(a.toLowerCase());
@@ -76,4 +76,42 @@
 
 
 // 4. Array method  
+
+    let arr = [10,20,30,40,50];
+
+    console.log(arr);
+    // console.log(arr.length);
+    // console.log(arr[0]);     // 1
+    // console.log(arr[1]);     // 2
+    // console.log(arr[2]);     // 3
+    // console.log(arr[3]);     // 4
+    // console.log(arr[4]);     // 5
+    // console.log(arr[5]);     // undefined
+    // console.log(arr.push(10));
+    // console.log(arr.push(20));
+    // console.log(arr);
+    // console.log(arr.pop());
+    // console.log(arr);
+    // console.log(arr.unshift(200));
+    // console.log(arr.unshift(300));
+    // console.log(arr);
+    // console.log(arr.shift());
+    // console.log(arr);
+    // console.log(arr.slice(2, 4));
+    // console.log(arr);
+    // console.log(arr.splice(2,4));
+    // console.log(arr);
+    // console.log(arr.reverse());
+    // console.log(arr);
+
+    let myarr = [20,22,55,54,72,19,84];
+    console.log(myarr);
+    console.log(myarr.sort());
+    
+    
+    
+
 // 5. Object method 
+
+
+    
