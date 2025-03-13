@@ -77,9 +77,9 @@
 
 // 4. Array method  
 
-    let arr = [10,20,30,40,50];
+    // let arr = [10,20,30,40,50];
 
-    console.log(arr);
+    // console.log(arr);
     // console.log(arr.length);
     // console.log(arr[0]);     // 1
     // console.log(arr[1]);     // 2
@@ -104,9 +104,9 @@
     // console.log(arr.reverse());
     // console.log(arr);
 
-    let myarr = [20,22,55,54,72,19,84];
-    console.log(myarr);
-    console.log(myarr.sort());
+    // let myarr = [20,22,55,54,72,19,84];
+    // console.log(myarr);
+    // console.log(myarr.sort());
     
     
 
@@ -116,5 +116,67 @@
 
 // 5. Object method 
 
+//  let myObj =  {
+//     user: "Maanav",
+//     age: 21,
+//     isLoggedIn: true
+//  }
 
+//  console.log(myObj);
+ 
+// console.log(myObj.user);
+// console.log(myObj.age);
+// console.log(myObj.isLoggedIn);
+// console.log(Object.keys(myObj));
+// console.log(Object.values(myObj));
+
+
+// Object.freeze(myObj)
+
+// myObj.user = "Ramesh";
+
+// console.log(myObj);
+
+
+// Object Create 
     
+// const newObj = Object.create(myObj)
+// const newObj = {}
+
+// console.log(newObj);
+// console.log(Object.entries(myObj));
+
+// Returns an array containing all of the [key, value] 
+// pairs of a given object's own enumerable string properties.
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+// [ 
+//     [ 'user', 'Maanav' ], 
+//     [ 'age', 21 ], 
+//     [ 'isLoggedIn', true ] 
+// ]
+
+
+
+// const oneObj = {a:1, b:2};
+// const twoObj = {c:3, d:4};
+
+// const threeObj = {}
+
+// console.log(Object.assign(threeObj ,oneObj, twoObj));
+
+// console.log(oneObj);
+// console.log(twoObj);
+// console.log(threeObj);
+
+
+
+
+// console.log(myObj);
+
+// Object.seal(myObj)
+
+// delete myObj.user
+
+// console.log(myObj);
