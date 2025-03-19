@@ -1,127 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Introduction to JavaScript</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f8f8f8;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+      h1,
+      h2 {
+        color: #333;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+      th {
+        background-color: #f8f8f8;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Introduction to JavaScript</h1>
-        
-        <h2>What is JavaScript?</h2>
-        <p>JavaScript (JS) is a high-level, interpreted programming language primarily used to enhance interactivity on web pages. It is one of the core technologies of the web alongside HTML and CSS.</p>
-        
-        <h2>Key Features of JavaScript:</h2>
-        <ul>
-            <li><strong>Client-side scripting:</strong> Runs directly in the user's web browser.</li>
-            <li><strong>Lightweight and fast:</strong> Executes code without requiring compilation.</li>
-            <li><strong>Event-driven:</strong> Responds to user interactions like clicks, form submissions, and key presses.</li>
-            <li><strong>Cross-platform:</strong> Works on all modern web browsers (Chrome, Firefox, Edge, Safari).</li>
-            <li><strong>Dynamic typing:</strong> No need to declare variable data types explicitly.</li>
-            <li><strong>Prototype-based Object-Oriented:</strong> Uses objects for reusability and inheritance.</li>
-        </ul>
-        
-        <h2>History of JavaScript</h2>
-        <ul>
-            <li><strong>1995:</strong> Created by Brendan Eich at Netscape. Initially called Mocha, later renamed LiveScript, and finally JavaScript.</li>
-            <li><strong>1996-1997:</strong> Standardized as ECMAScript (ES).</li>
-            <li><strong>2009:</strong> ES5 introduced JSON support and improved array methods.</li>
-            <li><strong>2015 (ES6/ECMAScript 2015):</strong> Introduced let, const, arrow functions, classes, and modules.</li>
-            <li><strong>Present:</strong> JavaScript is continuously evolving with new ECMAScript versions.</li>
-        </ul>
-        
-        <h2>Why Learn JavaScript?</h2>
-        <ul>
-            <li><strong>Essential for Web Development:</strong> JavaScript powers over 95% of websites.</li>
-            <li><strong>Interactivity & User Experience:</strong> Enables dynamic content like sliders, modals, and form validations.</li>
-            <li><strong>Full-Stack Development:</strong> Used in Node.js for server-side programming.</li>
-            <li><strong>Rich Ecosystem:</strong> Popular frameworks like React.js, Angular, and Vue.js are built with JavaScript.</li>
-            <li><strong>High Demand in Industry:</strong> JavaScript developers are among the most sought-after professionals in tech.</li>
-        </ul>
-        
-        <h2>Popular JavaScript Frameworks and Libraries</h2>
-        <ul>
-            <li><strong>React.js:</strong> A library for building user interfaces, developed by Facebook.</li>
-            <li><strong>Angular:</strong> A powerful framework developed by Google for dynamic web applications.</li>
-            <li><strong>Vue.js:</strong> A progressive framework known for its simplicity and flexibility.</li>
-            <li><strong>Node.js:</strong> A runtime environment that enables JavaScript to be used for backend development.</li>
-            <li><strong>Express.js:</strong> A minimalistic framework for building web applications and APIs using Node.js.</li>
-        </ul>
-        
-        <h2>Future Trends in JavaScript</h2>
-        <p>JavaScript continues to evolve, with new updates and features introduced regularly. Some key trends include:</p>
-        <ul>
-            <li>Improved support for asynchronous programming with async/await.</li>
-            <li>More integration with WebAssembly for performance improvements.</li>
-            <li>Enhanced security features for web applications.</li>
-            <li>Growth of serverless computing and cloud-based JavaScript applications.</li>
-        </ul>
-        
-        <h2>JavaScript vs Other Languages</h2>
-        <table>
-            <tr>
-                <th>Feature</th>
-                <th>JavaScript</th>
-                <th>Python</th>
-                <th>Java</th>
-            </tr>
-            <tr>
-                <td>Type</td>
-                <td>Dynamic (loosely typed)</td>
-                <td>Dynamic (loosely typed)</td>
-                <td>Static (strongly typed)</td>
-            </tr>
-            <tr>
-                <td>Usage</td>
-                <td>Web development (client & server)</td>
-                <td>Data Science, AI, Web</td>
-                <td>Enterprise & Android Apps</td>
-            </tr>
-            <tr>
-                <td>Execution</td>
-                <td>Browser (Client-side), Node.js (Server-side)</td>
-                <td>Python interpreter</td>
-                <td>Java Virtual Machine (JVM)</td>
-            </tr>
-        </table>
+      <h1>Introduction to JavaScript</h1>
+
+      <h2>What is JavaScript?</h2>
+      <p>
+        JavaScript (JS) is a high-level, interpreted programming language
+        primarily used to enhance interactivity on web pages. It is one of the
+        core technologies of the web alongside HTML and CSS.
+      </p>
+
+      <h2>Key Features of JavaScript:</h2>
+      <ul>
+        <li>
+          <strong>Client-side scripting:</strong> Runs directly in the user's
+          web browser.
+        </li>
+        <li>
+          <strong>Lightweight and fast:</strong> Executes code without requiring
+          compilation.
+        </li>
+        <li>
+          <strong>Event-driven:</strong> Responds to user interactions like
+          clicks, form submissions, and key presses.
+        </li>
+        <li>
+          <strong>Cross-platform:</strong> Works on all modern web browsers
+          (Chrome, Firefox, Edge, Safari).
+        </li>
+        <li>
+          <strong>Dynamic typing:</strong> No need to declare variable data
+          types explicitly.
+        </li>
+        <li>
+          <strong>Prototype-based Object-Oriented:</strong> Uses objects for
+          reusability and inheritance.
+        </li>
+      </ul>
+
+      <h2>History of JavaScript</h2>
+      <ul>
+        <li>
+          <strong>1995:</strong> Created by Brendan Eich at Netscape. Initially
+          called Mocha, later renamed LiveScript, and finally JavaScript.
+        </li>
+        <li><strong>1996-1997:</strong> Standardized as ECMAScript (ES).</li>
+        <li>
+          <strong>2009:</strong> ES5 introduced JSON support and improved array
+          methods.
+        </li>
+        <li>
+          <strong>2015 (ES6/ECMAScript 2015):</strong> Introduced let, const,
+          arrow functions, classes, and modules.
+        </li>
+        <li>
+          <strong>Present:</strong> JavaScript is continuously evolving with new
+          ECMAScript versions.
+        </li>
+      </ul>
+
+      <h2>Why Learn JavaScript?</h2>
+      <ul>
+        <li>
+          <strong>Essential for Web Development:</strong> JavaScript powers over
+          95% of websites.
+        </li>
+        <li>
+          <strong>Interactivity & User Experience:</strong> Enables dynamic
+          content like sliders, modals, and form validations.
+        </li>
+        <li>
+          <strong>Full-Stack Development:</strong> Used in Node.js for
+          server-side programming.
+        </li>
+        <li>
+          <strong>Rich Ecosystem:</strong> Popular frameworks like React.js,
+          Angular, and Vue.js are built with JavaScript.
+        </li>
+        <li>
+          <strong>High Demand in Industry:</strong> JavaScript developers are
+          among the most sought-after professionals in tech.
+        </li>
+      </ul>
+
+      <h2>Popular JavaScript Frameworks and Libraries</h2>
+      <ul>
+        <li>
+          <strong>React.js:</strong> A library for building user interfaces,
+          developed by Facebook.
+        </li>
+        <li>
+          <strong>Angular:</strong> A powerful framework developed by Google for
+          dynamic web applications.
+        </li>
+        <li>
+          <strong>Vue.js:</strong> A progressive framework known for its
+          simplicity and flexibility.
+        </li>
+        <li>
+          <strong>Node.js:</strong> A runtime environment that enables
+          JavaScript to be used for backend development.
+        </li>
+        <li>
+          <strong>Express.js:</strong> A minimalistic framework for building web
+          applications and APIs using Node.js.
+        </li>
+      </ul>
+
+      <h2>Future Trends in JavaScript</h2>
+      <p>
+        JavaScript continues to evolve, with new updates and features introduced
+        regularly. Some key trends include:
+      </p>
+      <ul>
+        <li>Improved support for asynchronous programming with async/await.</li>
+        <li>More integration with WebAssembly for performance improvements.</li>
+        <li>Enhanced security features for web applications.</li>
+        <li>
+          Growth of serverless computing and cloud-based JavaScript
+          applications.
+        </li>
+      </ul>
+
+      <h2>JavaScript vs Other Languages</h2>
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>JavaScript</th>
+          <th>Python</th>
+          <th>Java</th>
+        </tr>
+        <tr>
+          <td>Type</td>
+          <td>Dynamic (loosely typed)</td>
+          <td>Dynamic (loosely typed)</td>
+          <td>Static (strongly typed)</td>
+        </tr>
+        <tr>
+          <td>Usage</td>
+          <td>Web development (client & server)</td>
+          <td>Data Science, AI, Web</td>
+          <td>Enterprise & Android Apps</td>
+        </tr>
+        <tr>
+          <td>Execution</td>
+          <td>Browser (Client-side), Node.js (Server-side)</td>
+          <td>Python interpreter</td>
+          <td>Java Virtual Machine (JVM)</td>
+        </tr>
+      </table>
     </div>
-</body>
+
+    <script>
+      for (let i = 1; i <= 5; i++) {         // Outer Loop
+        for (let j = 1; j <= i; j++) {      // Inner Loop
+          document.write("*");
+        }
+        document.write("<br>");
+      }
+    </script>
+  </body>
 </html>

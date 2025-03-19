@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements in JavaScript - Q&A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            font-weight: bold;
+            margin-top: 15px;
+            color: #2c3e50;
+        }
+        .answer {
+            margin-left: 15px;
+            color: #555;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conditional Statements in JavaScript - Q&A</h1>
+        
+        <div class="qa">
+            <p class="question">1. What are the different types of conditional statements in JavaScript?</p>
+            <p class="answer">JavaScript provides if, if-else, if-else if-else, switch, and the ternary operator (? :) for decision-making.</p>
+
+            <p class="question">2. How does an if statement work in JavaScript?</p>
+            <p class="answer">An if statement executes a block of code if the given condition evaluates to true.</p>
+            <pre>
+if (x > 10) {
+    console.log("X is greater than 10");
+}
+            </pre>
+
+            <p class="question">3. What is the difference between if and else if?</p>
+            <p class="answer">if executes the first condition that evaluates to true, whereas else if allows checking multiple conditions before the final else executes.</p>
+
+            <p class="question">4. Can you use multiple else if statements in a condition?</p>
+            <p class="answer">Yes, you can use multiple else if conditions before the final else.</p>
+            <pre>
+if (score >= 90) {
+    console.log("Grade A");
+} else if (score >= 80) {
+    console.log("Grade B");
+} else {
+    console.log("Grade C");
+}
+            </pre>
+
+            <p class="question">5. What happens if none of the conditions in an if-else if-else block are met?</p>
+            <p class="answer">If there's no else statement, nothing happens. If else is provided, its block executes.</p>
+
+            <p class="question">6. How does the switch statement work in JavaScript?</p>
+            <p class="answer">The switch statement checks a variable against multiple case values and executes the corresponding code.</p>
+            <pre>
+let day = 3;
+switch (day) {
+    case 1: console.log("Monday"); break;
+    case 2: console.log("Tuesday"); break;
+    default: console.log("Other day");
+}
+            </pre>
+
+            <p class="question">7. What is the purpose of the default case in a switch statement?</p>
+            <p class="answer">The default case runs when no case matches the given value.</p>
+
+            <p class="question">8. How can you combine multiple cases in a switch statement?</p>
+            <p class="answer">Multiple cases can share the same code block.</p>
+            <pre>
+switch (fruit) {
+    case "apple":
+    case "banana":
+        console.log("This is a fruit.");
+        break;
+}
+            </pre>
+
+            <p class="question">9. What is the difference between switch and if-else statements?</p>
+            <p class="answer">if-else is better for complex conditions, whereas switch is useful when checking a single variable against multiple values.</p>
+
+            <p class="question">10. How do you use logical operators (&&, ||, !) inside an if condition?</p>
+            <p class="answer">Logical operators help combine multiple conditions.</p>
+            <pre>
+if (age >= 18 && hasID) {
+    console.log("Allowed");
+}
+            </pre>
+            
+            <p class="question">11. What happens if a condition inside an if statement evaluates to false?</p>
+            <p class="answer">The code inside the if block is skipped.</p>
+
+            <p class="question">12. Can you use a ternary operator (? :) instead of an if-else statement?</p>
+            <p class="answer">Yes, it is a shorthand for simple conditions.</p>
+            <pre>
+let result = (age >= 18) ? "Adult" : "Minor";
+            </pre>
+
+            <p class="question">13. How do you check for multiple conditions using && and ||?</p>
+            <p class="answer">&& requires all conditions to be true, while || requires at least one.</p>
+            <pre>
+if (x > 0 && y > 0) { console.log("Both positive"); }
+if (x > 0 || y > 0) { console.log("At least one positive"); }
+            </pre>
+
+            <p class="question">14. What is the difference between == and === in conditional statements?</p>
+            <p class="answer">== checks for value equality, while === checks for value and type equality.</p>
+
+            <p class="question">15. How do falsy values affect conditional statements in JavaScript?</p>
+            <p class="answer">Falsy values (0, "", null, undefined, NaN, false) evaluate as false in conditions.</p>
+        </div>
+    </div>
+</body>
+</html>
