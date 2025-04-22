@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA with JavaScript: Lectures 3 to 6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .content {
+            padding: 20px;
+            margin: 0 auto;
+            width: 80%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007bff;
+        }
+        h3 {
+            color: #333;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        pre {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #333;
+            overflow-x: auto;
+        }
+        .lecture {
+            margin-bottom: 30px;
+        }
+        .lecture p {
+            font-size: 18px;
+        }
+        .note {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-left: 5px solid #28a745;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>DSA with JavaScript: Lectures 3 to 6</h1>
+    <p>Control Flow, Loops, Functions, and Arrays</p>
+</header>
+
+<div class="content">
+
+    <!-- Lecture 3: Control Flow -->
+    <div class="lecture">
+        <h2>📌 1. Control Flow in JavaScript</h2>
+        <p>Control flow refers to the order in which individual statements, instructions, or function calls are executed. It allows you to control the path your program follows during its execution based on conditions.</p>
+        
+        <h3>➤ `if`, `else if`, `else` Statements</h3>
+        <p>These statements are used for decision-making. Depending on the result of the condition, different blocks of code will execute.</p>
+        <pre>
+if (condition) {
+    // block of code
+} else if (condition) {
+    // block of code
+} else {
+    // block of code
+}
+        </pre>
+        <p>Example:</p>
+        <pre>
+let score = 85;
+
+if (score >= 90) {
+    console.log("Grade A");
+} else if (score >= 75) {
+    console.log("Grade B");
+} else {
+    console.log("Grade C");
+}
+        </pre>
+
+        <h3>➤ `switch` Statement</h3>
+        <p>The `switch` statement is used when you have multiple conditions to check and is more readable for multiple `if` conditions.</p>
+        <pre>
+switch (expression) {
+  case value1:
+    // block of code
+    break;
+  case value2:
+    // block of code
+    break;
+  default:
+    // block of code
+}
+        </pre>
+        <p>Example:</p>
+        <pre>
+let day = 2;
+
+switch(day) {
+    case 1: console.log("Monday"); break;
+    case 2: console.log("Tuesday"); break;
+    case 3: console.log("Wednesday"); break;
+    default: console.log("Another day");
+}
+        </pre>
+    </div>
+
+    <!-- Lecture 4: Loops -->
+    <div class="lecture">
+        <h2>📌 2. Loops in JavaScript</h2>
+        <p>Loops allow you to repeat a block of code multiple times, which is useful when you need to perform the same operation on a collection of items or a range of numbers.</p>
+
+        <h3>➤ `for` Loop</h3>
+        <p>The `for` loop is commonly used when the number of iterations is known in advance.</p>
+        <pre>
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+        </pre>
+        <p>Example:</p>
+        <pre>
+for (let i = 0; i < 5; i++) {
+    console.log(i); // prints 0, 1, 2, 3, 4
+}
+        </pre>
+
+        <h3>➤ `while` Loop</h3>
+        <p>The `while` loop is useful when you want to repeat an action as long as a certain condition is true.</p>
+        <pre>
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+        </pre>
+        <p>Example:</p>
+        <pre>
+let i = 0;
+while (i < 5) {
+    console.log(i); // prints 0, 1, 2, 3, 4
+    i++;
+}
+        </pre>
+
+        <h3>➤ `do-while` Loop</h3>
+        <p>The `do-while` loop executes the code block first, then checks the condition after the loop. This guarantees that the loop runs at least once.</p>
+        <pre>
+let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+        </pre>
+        <p>Example:</p>
+        <pre>
+let i = 0;
+do {
+    console.log(i); // prints 0, 1, 2, 3, 4
+    i++;
+} while (i < 5);
+        </pre>
+    </div>
+
+    <!-- Lecture 5: Functions -->
+    <div class="lecture">
+        <h2>📌 3. Functions in JavaScript</h2>
+        <p>Functions are blocks of reusable code that perform a specific task. You can call a function multiple times without repeating the code inside it.</p>
+
+        <h3>➤ Function Declaration</h3>
+        <p>Function declaration creates a named function that can be called by its name.</p>
+        <pre>
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+greet("Alice");
+        </pre>
+        <p>Example:</p>
+        <pre>
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+greet("Alice");  // Output: Hello, Alice!
+        </pre>
+
+        <h3>➤ Function Expressions</h3>
+        <p>A function expression assigns a function to a variable. This function can then be called using that variable.</p>
+        <pre>
+const add = function(x, y) {
+    return x + y;
+};
+console.log(add(2, 3)); // Output: 5
+        </pre>
+    </div>
+
+    <!-- Lecture 6: Arrays -->
+    <div class="lecture">
+        <h2>📌 4. Arrays in JavaScript</h2>
+        <p>Arrays are used to store multiple values in a single variable. They are useful when you need to work with lists of data, such as numbers, strings, or objects.</p>
+
+        <h3>➤ Creating an Array</h3>
+        <p>Arrays are created using square brackets `[]`.</p>
+        <pre>
+let fruits = ["Apple", "Banana", "Cherry"];
+        </pre>
+        <p>Example:</p>
+        <pre>
+let fruits = ["Apple", "Banana", "Cherry"];
+console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
+        </pre>
+
+        <h3>➤ Accessing Array Elements</h3>
+        <p>Array elements are accessed by their index, which starts at 0.</p>
+        <pre>
+console.log(fruits[0]); // Output: Apple
+        </pre>
+
+        <h3>➤ Adding Elements to an Array</h3>
+        <p>You can add elements to an array using the `push()` method, which adds items to the end of the array.</p>
+        <pre>
+fruits.push("Orange");  // Adds "Orange" to the end
+console.log(fruits); // Output: ["Apple", "Banana", "Cherry", "Orange"]
+        </pre>
+
+        <h3>➤ Removing Elements from an Array</h3>
+        <p>The `pop()` method removes the last element of the array.</p>
+        <pre>
+fruits.pop();  // Removes "Orange"
+console.log(fruits); // Output: ["Apple", "Banana", "Cherry"]
+        </pre>
+    </div>
+
+</div>
+
+</body>
+</html>
