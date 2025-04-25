@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lecture 7 & 8 - Objects, Maps, Stacks, and Queues</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #0057ae;
+    }
+    code {
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+    pre {
+      background-color: #222;
+      color: #eee;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .highlight {
+      background: #d4edda;
+      padding: 10px;
+      border-left: 5px solid #28a745;
+      margin: 15px 0;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📘 Lecture 7 & 8: Objects, Maps, Stacks, and Queues</h1>
+
+    <!-- Objects -->
+    <div class="section">
+      <h2>🧱 Objects in JavaScript</h2>
+      <p>Objects are collections of key-value pairs. They are used to store and organize data in JavaScript.</p>
+      <pre><code>const person = {
+  name: "Rahul",
+  age: 25,
+  isStudent: true
+};</code></pre>
+      <p>You can access properties using dot or bracket notation:</p>
+      <pre><code>console.log(person.name);      // Output: "Rahul"
+console.log(person["age"]);    // Output: 25</code></pre>
+      <div class="highlight">
+        <strong>Why use Objects?</strong>
+        <ul>
+          <li>Organize related data</li>
+          <li>Store functions (methods)</li>
+          <li>Flexible and dynamic</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Maps -->
+    <div class="section">
+      <h2>🗺️ Maps in JavaScript</h2>
+      <p>Maps are similar to objects, but they allow any type of key and maintain the insertion order.</p>
+      <pre><code>const myMap = new Map();
+myMap.set("name", "Amit");
+myMap.set(1, "One");
+myMap.set(true, "Boolean key");</code></pre>
+      <p>To access values:</p>
+      <pre><code>console.log(myMap.get("name"));  // Output: "Amit"
+console.log(myMap.has(1));       // Output: true</code></pre>
+      <div class="highlight">
+        <strong>Advantages of Maps:</strong>
+        <ul>
+          <li>Any data type as key</li>
+          <li>Preserves insertion order</li>
+          <li>Built-in methods like <code>.set()</code>, <code>.get()</code>, <code>.has()</code></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Stack -->
+    <div class="section">
+      <h2>📚 Stacks - LIFO (Last In First Out)</h2>
+      <p>A Stack is a linear structure where the last element added is the first one removed.</p>
+      <pre><code>const stack = [];
+stack.push(10);
+stack.push(20);
+console.log(stack.pop());  // Output: 20</code></pre>
+      <div class="highlight">
+        <strong>Real-World Examples:</strong>
+        <ul>
+          <li>Undo feature in editors</li>
+          <li>Function call stack</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Queue -->
+    <div class="section">
+      <h2>🚶 Queues - FIFO (First In First Out)</h2>
+      <p>A Queue is a structure where the first element added is the first one removed.</p>
+      <pre><code>const queue = [];
+queue.push(10);
+queue.push(20);
+console.log(queue.shift());  // Output: 10</code></pre>
+      <div class="highlight">
+        <strong>Real-World Examples:</strong>
+        <ul>
+          <li>Task scheduling</li>
+          <li>Customer service line</li>
+          <li>Printing queue</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="section">
+      <h2>📌 Summary</h2>
+      <ul>
+        <li><strong>Objects</strong>: Simple key-value stores, great for structured data.</li>
+        <li><strong>Maps</strong>: Powerful key-value structure with order and any key type.</li>
+        <li><strong>Stacks</strong>: Use <code>.push()</code> and <code>.pop()</code>. Last in, first out.</li>
+        <li><strong>Queues</strong>: Use <code>.push()</code> and <code>.shift()</code>. First in, first out.</li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+  <script>
+
+    // stacks 
+
+
+    let arr = [1, 2, 3, 4, 5];
+
+    console.log(arr);
+
+    arr.push(100)
+    console.log(arr);
+    arr.pop()
+    console.log(arr);
+    
+    
+    
+
+
+  </script>
+</body>
+</html>
