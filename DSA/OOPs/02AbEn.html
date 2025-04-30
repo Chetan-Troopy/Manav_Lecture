@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP in JavaScript - Abstraction & Encapsulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Object-Oriented Programming in JavaScript</h1>
+        <p>Learn the 4 pillars of OOP with practical examples in JavaScript</p>
+    </header>
+
+    <section id="intro">
+        <h2>What is OOP?</h2>
+        <p>Object-Oriented Programming (OOP) is a programming paradigm that uses objects and classes to structure code.</p>
+        <p>Here are the four pillars of OOP:</p>
+        <ul>
+            <li><strong>Encapsulation</strong>: Bundling data and methods that operate on that data</li>
+            <li><strong>Abstraction</strong>: Hiding the complex details and showing only the necessary parts</li>
+            <li><strong>Inheritance</strong>: Child classes inherit properties and methods from parent classes</li>
+            <li><strong>Polymorphism</strong>: Methods behaving differently depending on the object</li>
+        </ul>
+    </section>
+
+    <section id="abstraction">
+        <h2>Abstraction in JavaScript</h2>
+        <p><strong>Abstraction</strong> refers to hiding the complex details of an object and exposing only the essential parts.</p>
+        <pre><code class="js">
+class Car {
+    constructor(model, engineStatus) {
+        this.model = model;
+        this.engineStatus = engineStatus;
+    }
+
+    startCar() {
+        if (this.engineStatus === "off") {
+            this.turnOnEngine();
+        }
+        console.log(\`\${this.model} is now running.\`);
+    }
+
+    turnOnEngine() {
+        console.log("Engine starting...");
+        this.engineStatus = "on";
+    }
+}
+
+const myCar = new Car("Toyota", "off");
+myCar.startCar(); // Toyota is now running.
+        </code></pre>
+    </section>
+
+    <section id="encapsulation">
+        <h2>Encapsulation in JavaScript</h2>
+        <p><strong>Encapsulation</strong> refers to bundling data and methods into a single unit (class) and restricting access to some of the object's components.</p>
+        <pre><code class="js">
+class BankAccount {
+    #balance = 0;
+
+    constructor(owner) {
+        this.owner = owner;
+    }
+
+    deposit(amount) {
+        if (amount > 0) {
+            this.#balance += amount;
+            console.log(\`Deposited \${amount}\`);
+        } else {
+            console.log("Invalid deposit amount.");
+        }
+    }
+
+    withdraw(amount) {
+        if (amount > 0 && this.#balance >= amount) {
+            this.#balance -= amount;
+            console.log(\`Withdrew \${amount}\`);
+        } else {
+            console.log("Invalid withdrawal amount or insufficient funds.");
+        }
+    }
+
+    getBalance() {
+        return this.#balance;
+    }
+}
+
+const account = new BankAccount("John Doe");
+account.deposit(500); // Deposited 500
+account.withdraw(100); // Withdrew 100
+console.log(account.getBalance()); // 400
+// account.#balance; // ❌ Error: Private field
+        </code></pre>
+    </section>
+
+    <footer>
+        <p>© 2025 OOP in JavaScript</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

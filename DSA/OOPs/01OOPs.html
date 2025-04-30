@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP in JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Object-Oriented Programming in JavaScript</h1>
+        <p>Learn the 4 pillars of OOP with practical examples in JavaScript</p>
+    </header>
+
+    <section id="intro">
+        <h2>What is OOP?</h2>
+        <p>Object-Oriented Programming (OOP) is a programming paradigm that uses objects and classes to structure code.</p>
+        <p>Here are the four pillars of OOP:</p>
+        <ul>
+            <li><strong>Encapsulation</strong>: Bundling data and methods that operate on that data</li>
+            <li><strong>Abstraction</strong>: Hiding the complex details and showing only the necessary parts</li>
+            <li><strong>Inheritance</strong>: Child classes inherit properties and methods from parent classes</li>
+            <li><strong>Polymorphism</strong>: Methods behaving differently depending on the object</li>
+        </ul>
+    </section>
+
+    <section id="examples">
+        <h2>OOP in JavaScript - Examples</h2>
+
+        <h3>1. Basic Object Example</h3>
+        <pre><code class="js">
+const person = {
+    name: "Alice",
+    age: 25,
+    greet() {
+        console.log(\`Hi, I'm \${this.name}\`);
+    }
+};
+
+person.greet(); // Hi, I'm Alice
+        </code></pre>
+
+        <h3>2. Function Constructor Example</h3>
+        <pre><code class="js">
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+Person.prototype.greet = function() {
+    console.log(\`Hello, I am \${this.name}\`);
+};
+
+const p1 = new Person("Bob", 30);
+p1.greet(); // Hello, I am Bob
+        </code></pre>
+
+        <h3>3. ES6 Classes Example</h3>
+        <pre><code class="js">
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        console.log(\`Hi, I'm \${this.name}\`);
+    }
+}
+
+const user = new Person("Charlie", 28);
+user.greet(); // Hi, I'm Charlie
+        </code></pre>
+
+        <h3>4. Inheritance Example</h3>
+        <pre><code class="js">
+class Employee extends Person {
+    constructor(name, age, position) {
+        super(name, age);
+        this.position = position;
+    }
+
+    work() {
+        console.log(\`\${this.name} is working as \${this.position}\`);
+    }
+}
+
+const emp = new Employee("Dana", 35, "Manager");
+emp.greet(); // Hi, I'm Dana
+emp.work();  // Dana is working as Manager
+        </code></pre>
+
+        <h3>5. Polymorphism Example</h3>
+        <pre><code class="js">
+class Animal {
+    speak() {
+        console.log("Animal speaks");
+    }
+}
+
+class Dog extends Animal {
+    speak() {
+        console.log("Dog barks");
+    }
+}
+
+const a = new Animal();
+const d = new Dog();
+
+a.speak(); // Animal speaks
+d.speak(); // Dog barks
+        </code></pre>
+    </section>
+
+    <footer>
+        <p>© 2025 OOP in JavaScript</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

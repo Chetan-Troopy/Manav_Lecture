@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Depth OOP Concepts in JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>In-Depth Object-Oriented Programming Concepts in JavaScript</h1>
+        <p>A complete guide to understanding OOP principles and their implementation in JavaScript</p>
+    </header>
+
+    <section id="intro">
+        <h2>What is Object-Oriented Programming (OOP)?</h2>
+        <p>Object-Oriented Programming (OOP) is a programming paradigm that is based on the concept of "objects", which contain data in the form of fields, often referred to as attributes or properties, and code, in the form of methods (functions).</p>
+        <p>In OOP, we model real-world entities as objects and interact with them through their methods. This helps in creating modular, reusable, and maintainable code.</p>
+    </section>
+
+    <section id="four-pillars">
+        <h2>The Four Pillars of OOP</h2>
+        <ul>
+            <li><strong>Encapsulation</strong>: Bundling data and methods that operate on that data within a single unit (class), and restricting access to some components.</li>
+            <li><strong>Abstraction</strong>: Hiding the complex details and showing only the necessary parts of an object.</li>
+            <li><strong>Inheritance</strong>: A mechanism where a new class (child class) can inherit properties and methods from an existing class (parent class).</li>
+            <li><strong>Polymorphism</strong>: The ability to use a single method or operator to work with different types of data or objects.</li>
+        </ul>
+    </section>
+
+    <section id="concepts">
+        <h2>OOP Concepts Explained</h2>
+
+        <!-- Constructor -->
+        <div class="concept">
+            <h3>Constructor</h3>
+            <p><strong>Constructor</strong> is a special method used to initialize an object. It is called automatically when a new instance of a class is created. A constructor allows you to set initial values for an object's properties when the object is created.</p>
+        </div>
+
+        <!-- Super -->
+        <div class="concept">
+            <h3>Super</h3>
+            <p><strong>Super</strong> is used to call methods and access properties from the parent class. It's typically used in the constructor or method of a child class to extend functionality from the parent class.</p>
+        </div>
+
+        <!-- Public and Private Access Modifiers -->
+        <div class="concept">
+            <h3>Public and Private Access Modifiers</h3>
+            <p><strong>Public</strong> members of a class are accessible from anywhere, meaning that they can be accessed directly by other objects or functions. On the other hand, <strong>Private</strong> members are not directly accessible from outside the class and are only accessible within the class itself. In modern JavaScript, private members can be defined using the `#` syntax.</p>
+        </div>
+
+        <!-- Inheritance -->
+        <div class="concept">
+            <h3>Inheritance</h3>
+            <p><strong>Inheritance</strong> is a mechanism that allows one class (child class) to inherit the properties and methods of another class (parent class). This allows the child class to reuse the code from the parent class and add or override functionalities as needed.</p>
+        </div>
+
+        <!-- Polymorphism -->
+        <div class="concept">
+            <h3>Polymorphism</h3>
+            <p><strong>Polymorphism</strong> allows objects of different classes to be treated as objects of a common parent class. It enables methods to behave differently depending on the type of object that calls them. This makes code more flexible and easier to maintain.</p>
+        </div>
+
+        <!-- Types of Polymorphism -->
+        <div class="concept">
+            <h3>Types of Polymorphism</h3>
+            <ul>
+                <li><strong>Compile-time Polymorphism</strong>: This is achieved by method overloading or operator overloading. In JavaScript, this is not natively supported, but similar behavior can be achieved using optional parameters or conditional statements.</li>
+                <li><strong>Runtime Polymorphism</strong>: This type of polymorphism is achieved by method overriding, where a method in a child class overrides a method in the parent class. The method call is resolved at runtime based on the object calling it.</li>
+            </ul>
+        </div>
+
+        <!-- Method Overloading -->
+        <div class="concept">
+            <h3>Method Overloading</h3>
+            <p><strong>Method Overloading</strong> refers to the ability to define multiple methods with the same name but different parameters. JavaScript does not support traditional method overloading (multiple methods with the same name but different signatures). However, similar behavior can be achieved using default parameters or conditional checks inside the method.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Object-Oriented Programming Concepts</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
