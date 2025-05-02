@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classes In JavaScript</title>
+  </head>
+  <body>
+    <h1>Classes In JavaScript</h1>
+    <p>
+      Classes are a template for creating objects. They encapsulate data with
+      code to work on that data. Classes in JS are built on prototypes but also
+      have some syntax and semantics that are unique to classes.
+    </p>
+    <h2>Object</h2>
+    <p>Objects are Instance of Class</p>
+
+    <h2>Key Features of JavaScript Classes</h2>
+    <ol>
+      <li>Constructor Method</li>
+      <ul>
+        <li>Runs when an Object is Created</li>
+        <li>Used to Initialize Properties</li>
+        <pre>
+
+            <code>
+                constructor(name, age) { 
+                    this.name = name; 
+                    this.age = age; 
+                }
+        </pre>
+        </code>
+      </ul>
+      <li>Instance Method</li>
+      <ul>
+        <li>Defined Inside the class and available to all instances</li>
+        <pre>
+
+            <code>
+                
+                greet() {
+                    console.log(`Hi, I'm ${this.name} and I'm ${this.age} year old`);
+                }
+            </code>
+        </pre>
+      </ul>
+      <li>Inheritance using extend and super</li>
+      <pre>
+
+      
+      <code>
+        class Student extends Person {
+            constructor(name, age, course) {
+              super(name, age); // Calls the parent constructor
+              this.course = course;
+            }
+    
+            study() {
+              console.log(`${this.name} is studying ${this.course}`);
+            }
+          }
+      </code>
+    </pre>
+      <li>Getters and Setters</li>
+      <pre>
+      <code>
+        class User {
+            constructor(name) {
+                this._name =  name;
+            }
+    
+    
+            get name(){
+                return this._name
+            }
+    
+    
+            set name(newName){
+                this._name = newName;
+            }
+    
+    
+    
+        }
+      </code>
+    </pre>
+    <li>Static Method</li>
+    <pre>
+        <code>
+
+        </code>
+    </pre>
+    </ol>
+
+    <script>
+    //   class Person {
+    //     constructor(name, age) {
+    //       this.name = name;
+    //       this.age = age;
+    //     }
+
+    //     greet() {
+    //       console.log(`Hi, I'm ${this.name} and I'm ${this.age} year old`);
+    //     }
+    //   }
+
+    //   class Student extends Person {
+    //     constructor(name, age, course) {
+    //       super(name, age); // Calls the parent constructor
+    //       this.course = course;
+    //     }
+
+    //     study() {
+    //       console.log(`${this.name} is studying ${this.course}`);
+    //     }
+    //   }
+
+    //   Getter and Setter 
+
+
+    // class User {
+    //     constructor(name) {
+    //         this._name =  name;
+    //     }
+
+
+    //     get name(){
+    //         return this._name
+    //     }
+
+
+    //     set name(newName){
+    //         this._name = newName;
+    //     }
+
+
+
+    // }
+
+
+    // const user1 = new User("Rohan")
+    // console.log(user1.name);
+    // user1.name = "Sanju";
+    // console.log(user1.name);
+    
+
+    // class MathUtils{
+    //     static add(a, b){
+    //         return a+ b;
+    //     }
+    // }
+    
+    // console.log(MathUtils.add(5,3));
+
+    
+
+    </script>
+
+    <script src="05BankAccount.js"></script>
+  </body>
+</html>
